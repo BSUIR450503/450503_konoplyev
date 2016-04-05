@@ -1,4 +1,4 @@
-#include "lib.h"
+#include "libra.h"
 
 int main(int argc, char *argv[]) {
 	
@@ -8,6 +8,7 @@ int main(int argc, char *argv[]) {
 	Myprocess proc(str);
 	proc.proces();
 	proc.show();
-	Sleep(3000);
+	
+	//usleep(3000);
 	return 0;
 }

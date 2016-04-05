@@ -1,4 +1,4 @@
-#include "lib.h"
+#include "libra.h"
 
 Myprocess::Myprocess() {
 	input = 0;
@@ -13,9 +13,8 @@ Myprocess::Myprocess(double _input) {
 void Myprocess::show() {
 	cout << endl << "Input number: " << input << endl;
 	cout << "Result: " << output << endl << endl;
+
 }
-
-
 
 void Myprocess::proces() {
 	fstream input_file;
@@ -42,18 +41,13 @@ void Myprocess::proces() {
 #endif
 
 #ifdef linux
-	pid_t pid; int status;
-	switch(pid = fork()) {
-	case -1:
-		perror("fork");
-		cout << "Error!";
-		exit(1);
-	case 0:
-		execl("processB", "one", "two", "t", NULL);
-		exit(0);
-	default:
-		wait(&status);
-	}
+	pid_t pid;
+	int status;
+if(fork()!=0){
+		wait(&status);}
+else execl("processB", "process", "B", "t", NULL);
+
+	
 #endif
 
 	fstream output_file;

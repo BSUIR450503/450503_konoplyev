@@ -1,14 +1,15 @@
-#ifdef LIB_H
-#define LIB_H
+
+#ifdef _WIN32
 #include <iostream>
 #include <string>
 #include <fstream>
-
-#ifdef _WIN32
 #include <windows.h>
 #endif
 
 #ifdef linux
+#include <iostream>
+#include <string>
+#include <fstream>
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -33,4 +34,3 @@ public:
 	void show();
 	void proces();
 };
-#endif LIB_H
