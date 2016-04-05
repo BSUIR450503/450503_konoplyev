@@ -1,4 +1,5 @@
-#pragma once
+#ifdef LIB_H
+#define LIB_H
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -32,3 +33,4 @@ public:
 	void show();
 	void proces();
 };
+#endif LIB_H
