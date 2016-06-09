@@ -1,7 +1,4 @@
 #######################
-#  MUSIC PLAYER V0.0  #
+#  MUSIC PLAYER V1.0  #
 #                     #
 #######################
-
-
-##In this folder will be best music player in the universe soon...
